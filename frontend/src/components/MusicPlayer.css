@@ -1,0 +1,155 @@
+/* frontend/src/components/MusicTherapy.css */
+.music-therapy-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }
+  
+  .music-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .music-header h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .music-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2em;
+  }
+  
+  .mood-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .mood-btn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    min-width: 140px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mood-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mood-btn.active {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .playlists-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .playlists-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.8em;
+  }
+  
+  .no-playlists {
+    text-align: center;
+    color: #666;
+    padding: 60px 20px;
+    font-size: 1.1em;
+  }
+  
+  .playlists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+  }
+  
+  .playlist-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .playlist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: #667eea;
+    background: white;
+  }
+  
+  .playlist-icon {
+    font-size: 40px;
+    flex-shrink: 0;
+  }
+  
+  .playlist-info {
+    flex: 1;
+  }
+  
+  .playlist-info h4 {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.3em;
+  }
+  
+  .playlist-info p {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+  
+  .tracks-count {
+    color: #888;
+    font-size: 0.85em;
+    font-weight: 500;
+  }
+  
+  .play-btn {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    min-width: 80px;
+  }
+  
+  .play-btn:hover {
+    background: #5a6fd8;
+    transform: scale(1.05);
+  }
+  
+  /* Mood-specific colors */
+  .mood-btn[style*="#FFD700"] { background: #FFD700; } /* Happy */
+  .mood-btn[style*="#6495ED"] { background: #6495ED; } /* Sad */
+  .mood-btn[style*="#FF4500"] { background: #FF4500; } /* Angry */
+  .mood-btn[style*="#20B2AA"] { background: #20B2AA; } /* Neutral */
+  .mood-btn[style*="#9370DB"] { background: #9370DB; } /* Surprise */

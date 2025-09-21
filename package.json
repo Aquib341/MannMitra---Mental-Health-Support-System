@@ -1,0 +1,14 @@
+{
+  "name": "mannmitra-monorepo",
+  "private": true,
+  "description": "Root for the mannmitra monorepo, containing the frontend and backend packages.",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "npm start --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "lint": "npm run lint --workspace=frontend"
+  }
+}
